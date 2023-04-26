@@ -1,17 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/bootstrap4-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
 @import url('https://fonts.googleapis.com/css?family=Kalam:200,300,400,500,600,700,800,900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
+  box-sizing: border-box;
   font-family: 'Kalam', sans-serif;
-  vertical-align: baseline;
-  font-weight: bold;
 }
 
 .container-principal {
