@@ -1,10 +1,16 @@
 <div class="background">
   <main class="work-content">
+    <div style="float: left; width: 20%">
       <h1>¿Quiénes Somos?</h1>
-      <span class="body">
-        R Savilla SAS es una sociedad por acciones simplificadas matriculada el martes 15 de marzo de 2016 en la cámara de comercio de Bogotá. Esta empresa se dedica principalmente a comercio al por mayor de desperdicios, desechos y chatarra.
-  </span>
-  <!--   <section class="picture-grid">
+    </div>
+    <span class="body">
+      R Savilla SAS es una sociedad por acciones simplificadas matriculada el
+      martes 15 de marzo de 2016 en la cámara de comercio de Bogotá. Esta
+      empresa se dedica principalmente a comercio al por mayor de desperdicios,
+      desechos y chatarra.
+    </span>
+
+    <!--   <section class="picture-grid">
       <div class="image-wrapper shadow-image flex flex-column justify-content-between">
           <img class="about-image" src="../../assets/images/Base1.jpg" alt="Base Cama">
       </div>
@@ -15,37 +21,51 @@
           <img class="about-image" src="../../assets/images/Base3.jpg" alt="Cabeceros">
       </div>
   </section> -->
-  <span class="body">
-      A través de la reincorporación de madera proveniente de estibas, desarrollamos
-      procesos de economía circular como nuestro proceso de valor, siendo reconocidos como
-      negocios verdes.
-  </span>
+    <section>
+      <div class="content">
+        <div class="img-logo">
+          <img
+            class="about-image"
+            src="../../assets/images/logo-sevilla.png"
+            alt="cadena de Valor"
+            style="position: absolute; top: 0; left: 0"
+          />
+        </div>
+        <div class="mision" style="float: left; width: 20%">
+          <h1>Misión</h1>
+          <span class="body">
+            Contribuir en la recuperación de la madera y afines, aportando en la
+            preservación del medio ambiente y los recursos naturales, realizando
+            y ejecutando proyectos que surjan desde un pensamiento ecológico y
+            sostenible, en beneficio de las personas y el entorno, de manera
+            normativa, con calidad y ambiente de familia.
+          </span>
+        </div>
+        <div style="float: left; width: 20%">
+          <h1>Visión</h1>
+          <span class="body">
+            Ser una empresa sostenible en la recuperación y nuevo uso de la
+            madera y afines, preocupada por conservar el ambiente, con
+            desarrollo económico, construyendo una conciencia humanista y
+            ambientalista, que reconozca la obra de Dios en el cuidado del
+            planeta.
+          </span>
+        </div>
+      </div>
+    </section>
 
-  <h1>Misión</h1>
-
-  <span class="body">
-    Contribuir en la recuperación de la madera y afines, aportando en la preservación del medio ambiente y los recursos naturales, realizando y ejecutando proyectos que surjan desde un pensamiento ecológico y sostenible, en beneficio de las personas y el entorno, de manera normativa, con calidad y ambiente de familia.
-  </span>
-  <h1>Visión</h1>
-
-  <span class="body">
-    Ser una empresa sostenible en la recuperación y nuevo uso de la madera y afines, preocupada por conservar el ambiente, con desarrollo económico, construyendo una conciencia humanista y ambientalista, que reconozca la obra de Dios en el cuidado del planeta.
-  </span>
-  <div class="flex flex-row w-full justify-content-center">
-      <img class="about-image" src="../../assets/images/logo-sevilla.png" alt="cadena de Valor" style="max-width: 500px">
-  </div>
-
-  <div class="flex align-items-center justify-content-center">
-    <div>
-        <p-button icon="pi pi-star" styleClass="p-button-outlined"></p-button>
+    <div
+      class="card flex flex-column gap-3 justify-content-center align-items-center"
+    >
+      <p-paginator
+        [first]="first"
+        [rows]="1"
+        [totalRecords]="12"
+        (onPageChange)="onPageChange($event)"
+        [showJumpToPageDropdown]="true"
+        [showPageLinks]="false"
+      ></p-paginator>
+      <img src="../../assets/fotos/imagen{{ first + 1 }}.jpg" class="max-w-full"/>
     </div>
-    <div class="flex-1">
-        <p-paginator (onPageChange)="onPageChange1($event)" [first]="first1" [rows]="rows1" [totalRecords]="120" [rowsPerPageOptions]="[10, 20, 30, 40, 50, 60]" [showFirstLastIcon]="false"></p-paginator>
-        <img src="https://primefaces.org/cdn/primeng/images/demo/nature/nature{{ first1 + 1 }}.jpg" class="max-w-full"/>
-    </div>
-    <div class="justify-content-end">
-        <p-button icon="pi pi-search"></p-button>
-    </div>
-  </div>
-</main>
+  </main>
 </div>
