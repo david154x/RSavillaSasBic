@@ -5,18 +5,22 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuModule } from 'primeng/menu';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { PaginatorModule } from 'primeng/paginator';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule
-  ], 
+  ],
   exports: [
     ButtonModule,
     InputTextModule,
     MenubarModule,
     MenuModule,
     ScrollPanelModule,
+    PaginatorModule,
+    PanelModule,
   ]
 })
 export class PrimengModule { }

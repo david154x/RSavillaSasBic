@@ -14,7 +14,7 @@ export class HeaderComponent {
   @Input() hide: boolean = false;//Estilos al padre
   enlaces: MenuItem[] = [
     { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción
-    //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores 
+    //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores
     {
       routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase",
       items: [
@@ -46,6 +46,6 @@ export class HeaderComponent {
   }
 
   toggleMenu() {
-    
+
   }
 }
