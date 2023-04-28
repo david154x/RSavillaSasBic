@@ -30,7 +30,7 @@
 Aqui inician los estilos de los efectos cards
 */
 
-.container-detail {
+.container-detail::before {
   display: flex;
   justify-content: center;
   align-items: center;
