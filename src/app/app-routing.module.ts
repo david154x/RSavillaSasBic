@@ -14,8 +14,13 @@ const routes: Routes = [
     children: [
       { path: 'work', component: WorkComponent },
       { path: 'home', component: HomeComponent },
+<<<<<<< HEAD
       { path: "**", redirectTo: "home" },
       { path: 'management', component:  ManagementComponent },
+=======
+      {path: 'about', component: AboutComponent},
+      { path: "**", redirectTo: "home" }
+>>>>>>> 6f653ceef134a1a240402c51ed4634148a40064e
     ]
   },
   { path: '**', redirectTo: 'home'},
