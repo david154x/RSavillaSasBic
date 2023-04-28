@@ -14,6 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'work', component: WorkComponent },
       { path: 'home', component: HomeComponent },
+      {path: 'about', component: AboutComponent},
       { path: "**", redirectTo: "home" }
     ]
   },
