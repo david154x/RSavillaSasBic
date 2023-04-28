@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { WorkComponent } from './work/work.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -14,6 +15,7 @@ const routes: Routes = [
     children: [
       { path: 'work', component: WorkComponent },
       { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
       { path: "**", redirectTo: "home" }
     ]
   },

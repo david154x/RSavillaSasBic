@@ -5,6 +5,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuModule } from 'primeng/menu';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { PaginatorModule } from 'primeng/paginator';
+import { DropdownModule } from 'primeng/dropdown';
+import { SliderModule } from 'primeng/slider';
 
 @NgModule({
   declarations: [],
@@ -17,6 +20,9 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
     MenubarModule,
     MenuModule,
     ScrollPanelModule,
+    PaginatorModule,
+    DropdownModule,
+    SliderModule,
   ]
 })
 export class PrimengModule { }
