@@ -63,3 +63,9 @@
   gap: 1rem;
 
 }
+
+.carousel-image {
+  width: 40rem;
+  height: 32rem;
+  object-fit: contain;
+}

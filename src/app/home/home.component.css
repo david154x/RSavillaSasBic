@@ -30,15 +30,21 @@
 Aqui inician los estilos de los efectos cards
 */
 
+.section-background {
+  background: #ECE8E8;
+}
+
+
 .container-detail {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background: #ECE8E8;
 }
 
 .container-ops {
+  margin: auto;
   position: relative;
   display: flex;
   justify-content: center;
@@ -50,9 +56,8 @@ Aqui inician los estilos de los efectos cards
 
 .container-ops .drop {
   position: relative;
-  width: 400px;
-  height: 400px;
-  /*background: #333;*/
+  width: 350px;
+  height: 350px;
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
                     25px 35px 20px rgba(0, 0, 0, 0.05),
                     25px 30px 30px rgba(0, 0, 0, 0.05),
@@ -150,7 +155,7 @@ Aqui inician los estilos de los efectos cards
 .container-ops .drop .content a::before {
   content: '';
   position: absolute;
-  top: 8px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   width: 65%;

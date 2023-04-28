@@ -3,37 +3,19 @@
   <h3 class="message">Recolección y Aprovechamiento de Materiales</h3>
   <h5 class="message">Nit: 900950210-0</h5>
 </section>
-<section class="container-detail">
-  <div class="container-ops">
-    <div class="drop" style="--clr: #A4F35B">
-      <div class="content">
-        <i class="pi pi-globe"></i>
-        <p>
-          Es muy importante para nosotros que conozcas como funciona y opera nuestra empresa, ya que la
-          transparencia de nuestros procesos son la clave para nuestros clientes
-        </p>
-        <a routerLink="/work">Conocer mas</a>
+<div class="w-full min-h-screen section-background">
+  <section class="container-detail" *ngFor="let section of dropsSections">
+    <div class="container-ops">
+      <div class="drop" [style]="{'--clr': drop.color }" *ngFor="let drop of section">
+        <div class="content">
+          <i [class]="drop.icon"></i>
+          <p>
+            Es muy importante para nosotros que conozcas como funciona y opera nuestra empresa, ya que la
+            transparencia de nuestros procesos son la clave para nuestros clientes
+          </p>
+          <a [routerLink]="drop.route">Conocer mas</a>
+        </div>
       </div>
     </div>
-    <div class="drop" style="--clr: #FB196F">
-      <div class="content">
-        <i class="pi pi-shopping-cart"></i>
-        <p>
-          Te invitamos a conocer nuestros  productos y servicios. ¡Es vital para nostross brindarte
-          la mejor experiencia acompañanos!
-        </p>
-        <a routerLink="/mi-componente">Conocer mas</a>
-      </div>
-    </div>
-    <div class="drop" style="--clr: #01b4ff">
-      <div class="content">
-        <i class="pi pi-users"></i>
-        <p>
-          Somos una empresa comprometida con el medio ambiente, por lo cual nos preocupamos por tener siempre
-          las mejores relaciones y reconocimientos que potencien nuestro crecimiento
-        </p>
-        <a routerLink="/mi-componente">Conocer mas</a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>

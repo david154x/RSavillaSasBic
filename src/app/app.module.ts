@@ -10,6 +10,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -22,6 +24,8 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     HomeComponent,
     NavigationComponent,
+    ContactComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

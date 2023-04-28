@@ -15,17 +15,13 @@ export class HeaderComponent {
   enlaces: MenuItem[] = [
     { routerLink: "/home", label: "Inicio", icon: "pi pi-home" }, //Introducción
     //{routerLink: "/work",label:"Nuestro trabajo"}, // oferecer servicio como gestores de material reciclable y apoyo a las empresas como consultores 
-    {
-      routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase",
-      items: [
-        { routerLink: "/consultoria", label: "Consultorias" },
-        { routerLink: "/material", label: "Material reciclable" }
-      ]},
-    {
-      routerLink: "/products", label: "Portafolio", icon: "pi pi-shopping-cart",
-    }, //Productos con el fin de mostrar el proceso de aprovechamiento con la madera y vender nuestros muebles
-    { routerLink: "/about", label: "Nosotros", icon: "pi pi-user", }, //mision vision valores corporativos, sede, nuestro equipo
-    { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", }, // Mostrar los reconocimientos ambientales y sociales logrados y reportes de gestion o sostenibilidad
+    { routerLink: "/work", label: "Nuestro trabajo", icon: "pi pi-briefcase", },
+    { routerLink: "/portfolio", label: "Portafolio", icon: "pi pi-shopping-cart", },
+    //Productos con el fin de mostrar el proceso de aprovechamiento con la madera y vender nuestros muebles
+    { routerLink: "/about", label: "Nosotros", icon: "pi pi-user", },
+    //mision vision valores corporativos, sede, nuestro equipo
+    { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", },
+    // Mostrar los reconocimientos ambientales y sociales logrados y reportes de gestion o sostenibilidad
     { routerLink: "/contact", label: "Contacto", icon: "pi pi-phone", },
   ];
 
