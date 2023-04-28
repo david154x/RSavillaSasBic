@@ -12,6 +12,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ManagementComponent } from './management/management.component';
 
 
 
@@ -26,14 +27,15 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NavigationComponent,
     ContactComponent,
     PortfolioComponent,
+    ManagementComponent,
   ],
   imports: [
     BrowserModule,
     PrimengModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
