@@ -34,5 +34,18 @@
   <div class="flex flex-row w-full justify-content-center">
       <img class="about-image" src="../../assets/images/logo-sevilla.png" alt="cadena de Valor" style="max-width: 500px">
   </div>
+
+  <div class="flex align-items-center justify-content-center">
+    <div>
+        <p-button icon="pi pi-star" styleClass="p-button-outlined"></p-button>
+    </div>
+    <div class="flex-1">
+        <p-paginator (onPageChange)="onPageChange1($event)" [first]="first1" [rows]="rows1" [totalRecords]="120" [rowsPerPageOptions]="[10, 20, 30, 40, 50, 60]" [showFirstLastIcon]="false"></p-paginator>
+        <img src="https://primefaces.org/cdn/primeng/images/demo/nature/nature{{ first1 + 1 }}.jpg" class="max-w-full"/>
+    </div>
+    <div class="justify-content-end">
+        <p-button icon="pi pi-search"></p-button>
+    </div>
+  </div>
 </main>
 </div>
