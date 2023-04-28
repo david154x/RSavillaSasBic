@@ -31,8 +31,8 @@ export class HeaderComponent {
     { routerLink: "/about", label: "Nosotros", icon: "pi pi-user",
     items: [
       { routerLink: "/nuestroEquipo", label: "Nuestro equipo" },
-      { routerLink: "/sedes", label: "Sedes" }
-    ]}, //mision vision valores corporativos, sede, nuestro equipo
+      { routerLink: "/principios", label: "Pincipios y valores" }
+    ]}, //mision vision valores corporativos, nuestro equipo
 
 
     { routerLink: "/management", label: "Gestión Corporativa", icon: "pi pi-cog", }, // Mostrar los reconocimientos ambientales y sociales logrados y reportes de gestion o sostenibilidad
