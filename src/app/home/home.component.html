@@ -9,9 +9,8 @@
       <div class="drop" [style]="{'--clr': drop.color }" *ngFor="let drop of section">
         <div class="content">
           <i [class]="drop.icon"></i>
-          <p>
-            Es muy importante para nosotros que conozcas como funciona y opera nuestra empresa, ya que la
-            transparencia de nuestros procesos son la clave para nuestros clientes
+          <p class="py-2">
+            {{drop.text}}
           </p>
           <a [routerLink]="drop.route">Conocer mas</a>
         </div>

@@ -30,13 +30,13 @@ export class HomeComponent {
     [
       {
         color: "#C5B667",
-        text: "Somos una empresa comprometida con el medio ambiente, por lo cual nos preocupamos por tener siempre las mejores relaciones y reconocimientos que potencien nuestro crecimiento",
+        text: "Conoce mas sobre los procesos, la calidad y los materiales que utilizamos para el desarrollo de nuestros productos.",
         route: "/management",
         icon: "pi pi-cog",
       },
       {
         color: "#5D5D5F",
-        text: "Somos una empresa comprometida con el medio ambiente, por lo cual nos preocupamos por tener siempre las mejores relaciones y reconocimientos que potencien nuestro crecimiento",
+        text: "Contactanos por medio telefonico o cualquiera de nuestras redes y te ayudaremos a resolver tus dudas sobre nuestro trabajo y productos.",
         route: "/contact",
         icon: "pi pi-phone",
       },
