@@ -8,6 +8,7 @@ import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { PaginatorModule } from 'primeng/paginator';
 import { DropdownModule } from 'primeng/dropdown';
 import { SliderModule } from 'primeng/slider';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [],
@@ -23,6 +24,7 @@ import { SliderModule } from 'primeng/slider';
     PaginatorModule,
     DropdownModule,
     SliderModule,
+    PanelModule,
   ]
 })
 export class PrimengModule { }

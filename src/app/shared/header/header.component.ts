@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
@@ -8,6 +8,9 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  scrollToMyElement(): void {
+    throw new Error('Method not implemented.');
+  }
 
   tapnavVariant: boolean = false;
   @Input() transparent: boolean = false; //Estilos al padre
@@ -30,8 +33,12 @@ export class HeaderComponent {
 
     { routerLink: "/about", label: "Nosotros", icon: "pi pi-user",
     items: [
-      { routerLink: "/nuestroEquipo", label: "Nuestro equipo" },
-      { routerLink: "/principios", label: "Pincipios y valores" }
+      {
+      label: "Principios y valores",
+      command: () => this.scrollToElement("principles-values")
+    },
+      { routerLink: "/nuestroEquipo", label: "Nuestro equipo" }
+
     ]}, //mision vision valores corporativos, nuestro equipo
 
 
@@ -40,7 +47,7 @@ export class HeaderComponent {
   ];
 
   constructor(
-    private readonly router: Router,
+    private readonly router: Router, private elementRef: ElementRef
   ) {
     this.router.events
       .subscribe((event) => {
@@ -50,6 +57,14 @@ export class HeaderComponent {
         }
       })
   }
+
+  scrollToElement(elementId: string): void {
+    let element = document.getElementById(elementId);
+    if(element) {
+      element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+  }
+
 
   handleSearch(event: any) {
     //TODO: Completar busqueda

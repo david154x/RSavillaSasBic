@@ -7,12 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  first:number=0;
-  rows: number=0;
+  first: number = 0;
+  totalRecords: number = 15;
 
-  onPageChange(event:any) {
-    this.first = event.first;
-    this.rows = event.rows;
+  constructor() {}
+
+  onPageChange({ page, first, rows, pageCount }: Record<string, number>) {
+    this.first = first;
   }
+
+
 
 }

@@ -16,11 +16,11 @@ import { AboutComponent } from './about/about.component';
 @NgModule({
   declarations: [
     AppComponent,
+    AboutComponent,
     HeaderComponent,
     WorkComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +29,6 @@ import { AboutComponent } from './about/about.component';
     BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
