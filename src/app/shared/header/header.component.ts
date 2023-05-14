@@ -37,7 +37,10 @@ export class HeaderComponent {
       label: "Principios y valores",
       command: () => this.scrollToElement("principles-values")
     },
-      { routerLink: "/nuestroEquipo", label: "Nuestro equipo" }
+      {
+        label: "Nuestro equipo",
+        command: () => this.scrollToElement("nuestro-equipo")
+      },
 
     ]}, //mision vision valores corporativos, nuestro equipo
 
